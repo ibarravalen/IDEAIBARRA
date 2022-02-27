@@ -1,0 +1,46 @@
+  /* VARIABLES , BUCLES y MIXIN's */
+
+  $azul:rgb(0,46,254);
+  $gris: #C8D2D8;
+  $reset: (
+margin:0px,
+padding:0px,
+font-size:20px,
+);
+
+
+$redes: ( 
+        twitter: #55acee,
+        facebook:  #3a5795,
+        instagram: #B966E6
+); 
+
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+       padding: 20px;
+       border-style: none;
+       border-radius: 20px;
+       margin: 20px;
+       color: white;
+   }
+}
+
+@mixin flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+@mixin font {
+    font-family: 'QuickSand';
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: $gris;
+    color: $azul;
+    text-align: center;
+    font-family: 'roboto';
+}

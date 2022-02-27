@@ -1,0 +1,174 @@
+@import "../SCSS/variables.scss";
+@import "../SCSS/grids.scss";
+
+
+body {
+    background-color: $gris;
+}
+
+
+ul {
+
+
+
+    li {
+
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+
+        a {
+            text-decoration: none;
+            margin: 10px;
+            font-family: 'Roboto Mono';
+            color: white ;
+        
+
+            &:hover {
+                color: white;
+                background-color: $azul;
+                border-style: solid;
+                border-width: 2px;
+                border-color: $azul;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 10px;
+            }
+
+
+        }
+    }
+
+}
+
+.flex {
+    @include flex;
+}
+
+
+
+
+
+header {
+    width: 100%;
+
+    nav {
+        background-color: $gris;
+        width: 100%;
+    }
+
+}
+
+.header {
+    width: 900px;
+    align-items: center;
+}
+
+.circulo {
+
+background-color: white ;
+border-radius: 300px;
+margin: 20px;
+
+&:hover {
+    border-style: dashed;
+    border-color: #97A1A8 ;
+}
+
+}
+
+.txt1 {
+    font-family: 'QuickSand';
+    text-align: center;
+    font-size: 20px;
+}
+
+.ofertas {
+    margin: 50px;
+    background-color: white;
+    border-radius: 30px;
+    width: 1500px;
+    height: 500px;
+}
+
+
+
+.flex-ofertas {
+    display: flex;
+    flex-flow: row nowrap;
+   justify-content: center;
+}
+
+.ofertas-txt {
+    font-family: 'QuickSand';
+    font-size: 20px;
+}
+
+.boton-carrito {
+    font-family: 'Roboto';
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+
+    &:hover {
+        background-color: $azul;
+        color: white;
+    }
+}
+
+.flex-nuevos {
+    @include flex;
+}
+
+.articulos {
+
+width: 300px;
+height: 400px;
+background-color: white;
+margin-left: 20px;
+margin-top: 20px;
+
+}
+
+
+.flex-item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.ttofertas {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'QuickSand';
+    font-style:inherit;
+    color: White;
+    background-image: linear-gradient(to right, blue , white);
+    width:800px ;
+    height:50px
+
+}
+
+.ttnuevos {
+    @extend .ttofertas;
+    margin-left: -100px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, blue , $gris );
+    border-radius: 30px;
+}
+
+
+.txt-publi {
+
+@extend .ofertas-txt;
+text-align: center;
+
+}
+
+.publi-flex {
+    @include flex;
+}
+
+

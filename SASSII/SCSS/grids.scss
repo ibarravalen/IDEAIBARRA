@@ -1,0 +1,68 @@
+/*GRIDS*/
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "secciones secciones secciones"
+        "ofertas ofertas ofertas"
+        "nuevos nuevos nuevos"
+        "publi publi publi"
+        "footer footer footer"
+
+    ;
+
+    grid-template-rows: 900px 400px 550px 600px 400px 100px;
+
+}
+
+
+header {
+    grid-area: header;
+}
+
+#secciones {
+    grid-area: secciones;
+    justify-self: center;
+}
+
+#ofertas {
+    grid-area: ofertas;
+    justify-self: center;
+}
+
+#nuevos {
+    grid-area: nuevos;
+    justify-self: center;
+}
+
+#publi {
+    grid-area: publi;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+#grid2 {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "image image image"
+    ;
+    grid-template-rows: 0.1fr 2fr;
+    grid-template-columns: 100%;
+
+}
+
+#lista {
+    grid-area: nav;
+}
+
+#img2 {
+    grid-area: image;
+    justify-self: center;
+    width: 100%;
+}
+
